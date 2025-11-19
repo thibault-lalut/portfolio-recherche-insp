@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!-- saved from url=(0065)file:///C:/Users/Thibault/Downloads/portfolio_ENA_INSP%20(3).html -->
 <html lang="fr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -462,11 +461,11 @@
             <h2>2. Analyse lexicométrique (ENA → INSP)</h2>
             
             <div class="tabs">
-                <button class="tab-button active" onclick="openTab(event, &#39;lexico-corpus&#39;)">Corpus</button>
-                <button class="tab-button" onclick="openTab(event, &#39;lexico-termes&#39;)">Termes clés</button>
-                <button class="tab-button" onclick="openTab(event, &#39;lexico-groupes&#39;)">Groupes conceptuels</button>
-                <button class="tab-button" onclick="openTab(event, &#39;lexico-archi&#39;)">Architecture numérique</button>
-                <button class="tab-button" onclick="openTab(event, &#39;lexico-sankey&#39;)">Transition (Sankey)</button>
+                <button class="tab-button active" onclick="openTab(event, 'lexico-corpus')">Corpus</button>
+                <button class="tab-button" onclick="openTab(event, 'lexico-termes')">Termes clés</button>
+                <button class="tab-button" onclick="openTab(event, 'lexico-groupes')">Groupes conceptuels</button>
+                <button class="tab-button" onclick="openTab(event, 'lexico-archi')">Architecture numérique</button>
+                <button class="tab-button" onclick="openTab(event, 'lexico-sankey')">Transition (Sankey)</button>
             </div>
 
             <!-- TAB : CORPUS -->
@@ -597,7 +596,7 @@
                 </div>
 
                 <div class="chart-container large">
-                    <canvas id="chartTermesCles" height="0" style="display: block; box-sizing: border-box; height: 0px; width: 0px;" width="0"></canvas>
+                    <canvas id="chartTermesCles"></canvas>
                 </div>
 
                 <div class="accordion">
@@ -703,7 +702,7 @@
                 </div>
 
                 <div class="chart-container large">
-                    <canvas id="chartGroupesConceptuels" height="0" style="display: block; box-sizing: border-box; height: 0px; width: 0px;" width="0"></canvas>
+                    <canvas id="chartGroupesConceptuels"></canvas>
                 </div>
 
                 <div class="highlight-box">
@@ -719,7 +718,7 @@
 
                 <h4>Persistance vs Innovation lexicale</h4>
                 <div class="chart-container">
-                    <canvas id="chartPersistance" height="0" style="display: block; box-sizing: border-box; height: 0px; width: 0px;" width="0"></canvas>
+                    <canvas id="chartPersistance"></canvas>
                 </div>
                 <p style="font-size: 0.9rem; color: #666; text-align: center; margin-top: -1rem;">
                     <strong>Même les termes les plus innovants conservent une proportion majoritaire héritée de la période ENA (60-75%)</strong>
@@ -737,7 +736,7 @@
 
                 <h4>Profondeur moyenne des URLs (1998-2025)</h4>
                 <div class="chart-container">
-                    <canvas id="chartProfondeurURL" height="0" style="display: block; box-sizing: border-box; height: 0px; width: 0px;" width="0"></canvas>
+                    <canvas id="chartProfondeurURL"></canvas>
                 </div>
 
                 <div class="highlight-box">
@@ -751,7 +750,7 @@
 
                 <h4>Nombre de sections distinctes</h4>
                 <div class="chart-container">
-                    <canvas id="chartNombreSections" height="0" style="display: block; box-sizing: border-box; height: 0px; width: 0px;" width="0"></canvas>
+                    <canvas id="chartNombreSections"></canvas>
                 </div>
 
                 <p>
@@ -762,7 +761,7 @@
 
                 <h4>Répartition Technique / Thématique des sections</h4>
                 <div class="chart-container">
-                    <canvas id="chartTechniqueThematique" height="0" style="display: block; box-sizing: border-box; height: 0px; width: 0px;" width="0"></canvas>
+                    <canvas id="chartTechniqueThematique"></canvas>
                 </div>
 
                 <div class="highlight-box warning">
@@ -823,12 +822,12 @@
             <h2>3. Sociographie de l'INSP</h2>
 
             <div class="tabs">
-                <button class="tab-button active" onclick="openTab(event, &#39;socio-profil&#39;)">Profil global</button>
-                <button class="tab-button" onclick="openTab(event, &#39;socio-origines&#39;)">Origines scolaires</button>
-                <button class="tab-button" onclick="openTab(event, &#39;socio-stages&#39;)">Stages &amp; territoires</button>
-                <button class="tab-button" onclick="openTab(event, &#39;socio-exp&#39;)">Expérience pro</button>
-                <button class="tab-button" onclick="openTab(event, &#39;socio-affectations&#39;)">Affectations</button>
-                <button class="tab-button" onclick="openTab(event, &#39;socio-synthese&#39;)">Points saillants</button>
+                <button class="tab-button active" onclick="openTab(event, 'socio-profil')">Profil global</button>
+                <button class="tab-button" onclick="openTab(event, 'socio-origines')">Origines scolaires</button>
+                <button class="tab-button" onclick="openTab(event, 'socio-stages')">Stages &amp; territoires</button>
+                <button class="tab-button" onclick="openTab(event, 'socio-exp')">Expérience pro</button>
+                <button class="tab-button" onclick="openTab(event, 'socio-affectations')">Affectations</button>
+                <button class="tab-button" onclick="openTab(event, 'socio-synthese')">Points saillants</button>
             </div>
 
             <!-- TAB : PROFIL GLOBAL -->
@@ -837,7 +836,7 @@
 
                 <h4>Répartition par genre (4 promotions)</h4>
                 <div class="chart-container">
-                    <canvas id="chartGenre" width="800" height="400" style="display: block; box-sizing: border-box; height: 400px; width: 800px;"></canvas>
+                    <canvas id="chartGenre"></canvas>
                 </div>
 
                 <table>
@@ -918,7 +917,7 @@
 
                 <h4>Dernier établissement avant l'INSP (par promotion)</h4>
                 <div class="chart-container large">
-                    <canvas id="chartDernierEtablissement" height="0" style="display: block; box-sizing: border-box; height: 0px; width: 0px;" width="0"></canvas>
+                    <canvas id="chartDernierEtablissement"></canvas>
                 </div>
 
                 <table>
@@ -989,7 +988,7 @@
 
                 <h4>Parcours académique complet (cumul des formations)</h4>
                 <div class="chart-container">
-                    <canvas id="chartParcoursAcademique" height="0" style="display: block; box-sizing: border-box; height: 0px; width: 0px;" width="0"></canvas>
+                    <canvas id="chartParcoursAcademique"></canvas>
                 </div>
 
                 <p>
@@ -1026,7 +1025,7 @@
 
                 <h4>Stages internationaux (Promo 2022-2023)</h4>
                 <div class="chart-container">
-                    <canvas id="chartStagesInternationaux" height="0" style="display: block; box-sizing: border-box; height: 0px; width: 0px;" width="0"></canvas>
+                    <canvas id="chartStagesInternationaux"></canvas>
                 </div>
 
                 <table>
@@ -1095,7 +1094,7 @@
 
                 <h4>Missions d'ouverture en territoire (entreprises)</h4>
                 <div class="chart-container">
-                    <canvas id="chartMissionsEntreprise" height="0" style="display: block; box-sizing: border-box; height: 0px; width: 0px;" width="0"></canvas>
+                    <canvas id="chartMissionsEntreprise"></canvas>
                 </div>
 
                 <div class="highlight-box success">
@@ -1119,7 +1118,7 @@
                 </p>
 
                 <div class="chart-container large">
-                    <canvas id="chartExperiencePro" height="0" style="display: block; box-sizing: border-box; height: 0px; width: 0px;" width="0"></canvas>
+                    <canvas id="chartExperiencePro"></canvas>
                 </div>
 
                 <table>
@@ -1216,7 +1215,7 @@
                 </p>
 
                 <div class="chart-container">
-                    <canvas id="chartAffectations" height="0" style="display: block; box-sizing: border-box; height: 0px; width: 0px;" width="0"></canvas>
+                    <canvas id="chartAffectations"></canvas>
                 </div>
 
                 <table>
@@ -1566,14 +1565,17 @@
 
         // ===== TABS =====
         function openTab(evt, tabName) {
-            // Hide all tab contents
-            const tabContents = document.getElementsByClassName('tab-content');
+            // Get the section that contains this tab
+            const section = evt.currentTarget.closest('section');
+            
+            // Hide all tab contents in this section only
+            const tabContents = section.getElementsByClassName('tab-content');
             for (let content of tabContents) {
                 content.classList.remove('active');
             }
             
-            // Remove active class from all buttons
-            const tabButtons = document.getElementsByClassName('tab-button');
+            // Remove active class from all buttons in this section only
+            const tabButtons = section.getElementsByClassName('tab-button');
             for (let button of tabButtons) {
                 button.classList.remove('active');
             }
@@ -1743,7 +1745,7 @@
                     {
                         label: 'Période INSP (2022-2024)',
                         data: [38, 42, 60, 45, 15, 22, 18, 12, 25, 8],
-                        backgroundColor: colors.success
+                        backgroundColor: '#4CAF50'  // Couleur verte plus vive et distinguable
                     }
                 ]
             },
